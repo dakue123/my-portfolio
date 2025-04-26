@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    gap: 50px;
+    list-style: none;
+}
+
+nav li {
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cotainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 10%;
+}
+
+.font-name {
+    font-family: Arial, sans-serif;
+    color: #e26b6b;
+}
+
+.image {
+    position: relative;
+    display: flex;
+}
+
+.image img {
+    width: 400px;
+    border-radius: 60%;
+}
+
+.info {
+    padding: 15%;
+}
+
+.info h1 {
+    font-size: 4em;
+    max-width: 600px;
+}
+
+.info h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #e26b6b;
+}
+
+.info p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.social-icons a {
+    margin-right: 20px;
+    color: #e26b6b;
+    font-size: 1.5em;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+button {
+    background-color: transparent;
+    color: #e26b6b;
+    border: 2px solid #e26b6b;
+    padding: 10px 25px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    font-size: 20px;
+    background-color: #e26b6b;
+    color: #000;
+}
+
+
+/*=======responsive=======*/
+
+
+/* ✅ Mobile-first adjustments */
+@media (max-width: 767.98px) {
+    body {
+        background-color: white;
+        color: rgb(0, 0, 0);
+        font-family: 'Arial', sans-serif;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        gap: 25px;
+        list-style: none;
+    }
+
+    nav li {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        font-weight: 300;
+    }
+
+    .cotainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 25px 5%;
+    }
+
+    .image img {
+        width: 200px;
+        border-radius: 60%;
+    }
+
+    .info {
+        padding: 15%;
+    }
+    
+    .info h1 {
+        font-size: 1em;
+        max-width: 100px;
+    }
+    
+    .info h2 {
+        font-size: 0.5rem;
+        margin-bottom: 10px;
+    }
+
+    .info p {
+        font-size: 0.7rem;
+        color: rgb(206, 174, 46);
+    }
+    .social-icons a {
+        margin-right: 10px;
+        color: #e26b6b;
+        font-size: 1.5em;
+        transition: 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+        transform: scale(1.2);
+    }
+}
